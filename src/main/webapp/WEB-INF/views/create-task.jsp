@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <title>Rodrick - ToDo App</title>
 </head>
-<body>
+<body class="bg-secondary">
 <div class="container">
     <div class="row min-vh-100 align-items-center justify-content-center">
         <div class="col-md-4">
-            <div class="card border-0 shadow-lg">
-                <div class="card-body">
+            <div class="card border-0 shadow-lg" >
+                <div class="card-body" style="height: 650px;overflow-y: auto;">
                     <div class="d-flex my-3">
                         <a href="." class="btn shadow-sm mb-3 d-inline">
                             <i class="bi bi-arrow-left" style="font-size:20px"></i>
@@ -37,6 +37,9 @@
                     <div class="mb-3">
                        <a type="submit" class="btn btn-primary w-100 float-end">Submit</a>
                     </div>
+                    <%
+                        out.println("Your IP address is " + request.getRemoteAddr());
+                    %>
                 </div>
             </div>
         </div>

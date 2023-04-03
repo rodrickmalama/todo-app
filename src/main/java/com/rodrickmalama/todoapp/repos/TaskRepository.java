@@ -1,4 +1,7 @@
 package com.rodrickmalama.todoapp.repos;
 
-public interface TaskRepository {
+import com.rodrickmalama.todoapp.entities.Task;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface TaskRepository extends JpaRepository<Task, Long> {
 }
